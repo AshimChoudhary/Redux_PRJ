@@ -27,7 +27,7 @@ export async function fetchGIFKLIP(query, page = 1, per_page = 20) {
     `https://api.klipy.com/api/v1/${KLIPY_KEY}/gifs/search`,
     {
       params: {
-        query,
+        q: query,
         page,
         per_page,
       },
